@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _with_tests - perform "make test"
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
 %define	pnam	Chart
@@ -13,9 +14,9 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-%if %{?_with_tests:1}%{!?_with_tests:0}
+%if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-DBI >= 1.14
-BuildRequires:	perl-GD >= 1.32
+BuildRequires:	perl-GD >= 2
 BuildRequires:	perl-GD-TextUtil >= 0.80
 %endif
 BuildRequires:	rpm-perlprov >= 3.0.3-26
@@ -39,7 +40,7 @@ Gantta oraz grafów z³o¿onych z linii, punktów i obszarów.
 perl Makefile.PL
 %{__make}
 
-%{?_with_tests:%{__make} test}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
