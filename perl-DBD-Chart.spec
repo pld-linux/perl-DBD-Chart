@@ -39,7 +39,7 @@ Gantta oraz grafów z³o¿onych z linii, punktów i obszarów.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %{!?_without_tests:%{__make} test}
