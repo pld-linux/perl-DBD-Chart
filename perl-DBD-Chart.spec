@@ -37,7 +37,7 @@ Gantta oraz grafów z³o¿onych z linii, punktów i obszarów.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %{!?_without_tests:%{__make} test}
