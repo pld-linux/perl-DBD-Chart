@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DBD
 %define	pnam	Chart
-Summary:	DBD::Chart - DBI driver abstraction for Rendering Charts and Graphs
+Summary:	DBD::Chart - DBI driver abstraction for rendering charts and graphs
 Summary(pl):	DBD::Chart - warstwa abstrakcji DBI do tworzenia wykresów i grafów
 Name:		perl-DBD-Chart
 Version:	0.80
