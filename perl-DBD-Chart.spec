@@ -6,7 +6,7 @@
 %define		pdir	DBD
 %define		pnam	Chart
 Summary:	DBD::Chart - DBI driver abstraction for rendering charts and graphs
-Summary(pl.UTF-8):   DBD::Chart - warstwa abstrakcji DBI do tworzenia wykresów i grafów
+Summary(pl.UTF-8):	DBD::Chart - warstwa abstrakcji DBI do tworzenia wykresów i grafów
 Name:		perl-DBD-Chart
 Version:	0.82
 Release:	1
