@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	DBD
 %define		pnam	Chart
 Summary:	DBD::Chart - DBI driver abstraction for rendering charts and graphs
