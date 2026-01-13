@@ -8,7 +8,7 @@ Summary:	DBD::Chart - DBI driver abstraction for rendering charts and graphs
 Summary(pl.UTF-8):	DBD::Chart - warstwa abstrakcji DBI do tworzenia wykresów i grafów
 Name:		perl-DBD-Chart
 Version:	0.82
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
